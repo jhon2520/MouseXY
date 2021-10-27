@@ -1,0 +1,16 @@
+C:\Users\Jhon Romero\source\repos\MouseXY\MouseXY\bin\Debug\MouseXY.exe.config
+C:\Users\Jhon Romero\source\repos\MouseXY\MouseXY\bin\Debug\MouseXY.exe
+C:\Users\Jhon Romero\source\repos\MouseXY\MouseXY\bin\Debug\MouseXY.pdb
+C:\Users\Jhon Romero\source\repos\MouseXY\MouseXY\obj\Debug\MouseXY.Properties.Resources.resources
+C:\Users\Jhon Romero\source\repos\MouseXY\MouseXY\obj\Debug\MouseXY.csproj.GenerateResource.cache
+C:\Users\Jhon Romero\source\repos\MouseXY\MouseXY\obj\Debug\MouseXY.csproj.CoreCompileInputs.cache
+C:\Users\Jhon Romero\source\repos\MouseXY\MouseXY\obj\Debug\MouseXY.exe
+C:\Users\Jhon Romero\source\repos\MouseXY\MouseXY\obj\Debug\MouseXY.pdb
+C:\Users\Jhon Romero\source\repos\MouseXY\MouseXY\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\Jhon Romero\source\repos\MouseXY\MouseXY\obj\Debug\MouseXY.Aviso.resources
+C:\Users\Jhon Romero\source\repos\MouseXY\MouseXY\obj\Debug\MouseXY.VentanaInicial.resources
+C:\Users\Jhon Romero\source\repos\MouseXY\MouseXY\bin\Debug\MouseXY.exe.manifest
+C:\Users\Jhon Romero\source\repos\MouseXY\MouseXY\bin\Debug\MouseXY.application
+C:\Users\Jhon Romero\source\repos\MouseXY\MouseXY\obj\Debug\MouseXY.exe.manifest
+C:\Users\Jhon Romero\source\repos\MouseXY\MouseXY\obj\Debug\MouseXY.application
+C:\Users\Jhon Romero\source\repos\MouseXY\MouseXY\obj\Debug\MouseXY.csproj.CopyComplete
