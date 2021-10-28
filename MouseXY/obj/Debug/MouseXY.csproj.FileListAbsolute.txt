@@ -13,4 +13,3 @@ C:\Users\Jhon Romero\source\repos\MouseXY\MouseXY\bin\Debug\MouseXY.exe.manifest
 C:\Users\Jhon Romero\source\repos\MouseXY\MouseXY\bin\Debug\MouseXY.application
 C:\Users\Jhon Romero\source\repos\MouseXY\MouseXY\obj\Debug\MouseXY.exe.manifest
 C:\Users\Jhon Romero\source\repos\MouseXY\MouseXY\obj\Debug\MouseXY.application
-C:\Users\Jhon Romero\source\repos\MouseXY\MouseXY\obj\Debug\MouseXY.csproj.CopyComplete

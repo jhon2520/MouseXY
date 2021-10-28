@@ -17,14 +17,14 @@ namespace MouseXY
         private Label labelY = new Label();
         private int posX = Cursor.Position.X;
         private int posY = Cursor.Position.Y;
-        private double witdhScreen = SystemParameters.FullPrimaryScreenWidth;
-        private double heigthScreen = SystemParameters.FullPrimaryScreenHeight;
+        private double witdhScreen = Screen.PrimaryScreen.Bounds.Width;
+        private double heigthScreen = Screen.PrimaryScreen.Bounds.Height;
         private enum Localizaciones{izqArriba,derArriba,centro, izqAbajo,derAbajo }
         private Localizaciones localizaciones = Localizaciones.centro;
-        private int labelXposX = ((int)SystemParameters.FullPrimaryScreenWidth / 2);
-        private int labelXposY = ((int)SystemParameters.FullPrimaryScreenHeight / 2);
-        private int labelYposX = (int)(SystemParameters.FullPrimaryScreenWidth / 2 + 65);
-        private int labelYposY = (int)(SystemParameters.FullPrimaryScreenHeight / 2);
+        private int labelXposX = ((int)Screen.PrimaryScreen.Bounds.Width / 2);
+        private int labelXposY = ((int)Screen.PrimaryScreen.Bounds.Height / 2);
+        private int labelYposX = (int)(Screen.PrimaryScreen.Bounds.Width / 2 + 65);
+        private int labelYposY = (int)(Screen.PrimaryScreen.Bounds.Height / 2);
         private Form activeForm = null;
 
 
@@ -34,42 +34,28 @@ namespace MouseXY
         }
 
 
-        private void sumar(int a, int b)
-        {
-            System.Windows.Forms.MessageBox.Show((a + b).ToString());
-        }
-
-        private void sumar(int a, int b,int c)
-        {
-            System.Windows.Forms.MessageBox.Show((a + b +c).ToString());
-        }
 
 
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
 
             this.labelX.Location = new Point(labelXposX, labelXposY);
-            this.labelX.AutoSize = false;
+            //this.labelX.AutoSize = false;
             this.labelX.Size = new Size(65, 25);
             this.labelX.TextAlign = ContentAlignment.MiddleCenter;
-            this.labelX.Text = "PosiciónX";
+            this.labelX.Text = "0000";
             this.labelX.ForeColor = Color.White;
-            this.labelX.Font = new Font(FontFamily.GenericSansSerif, 18.0f, FontStyle.Bold);
+            this.labelX.Font = new Font(FontFamily.GenericSansSerif, 16.0f, FontStyle.Bold);
             this.labelX.MouseMove += new MouseEventHandler(EventMouse); 
             
             this.labelY.Location = new Point(labelYposX, labelYposY);
-            this.labelY.AutoSize = false;
+            //this.labelY.AutoSize = false;
             this.labelY.Size = new Size(65, 25);
             this.labelY.TextAlign = ContentAlignment.MiddleCenter;
-            this.labelY.Text = "PosiciónY";
+            this.labelY.Text = "0000";
             this.labelY.ForeColor = Color.White;
-            this.labelY.Font = new Font(FontFamily.GenericSansSerif, 18.0f, FontStyle.Bold);
+            this.labelY.Font = new Font(FontFamily.GenericSansSerif, 16.0f, FontStyle.Bold);
             this.labelY.MouseMove += new MouseEventHandler(EventMouse); 
 
 
@@ -116,37 +102,37 @@ namespace MouseXY
                     case Localizaciones.centro:
                         this.labelXposX = (20);
                         this.labelXposY = (20);
-                        this.labelYposX = (85);
+                        this.labelYposX = (105);
                         this.labelYposY = (20);
                         this.localizaciones = Localizaciones.izqArriba;
                         break;
                     case Localizaciones.izqArriba:
-                        this.labelXposX = ((int)SystemParameters.FullPrimaryScreenWidth - 130);
+                        this.labelXposX = ((int)Screen.PrimaryScreen.Bounds.Width - 135);
                         this.labelXposY = (20);
-                        this.labelYposX = ((int)SystemParameters.FullPrimaryScreenWidth - 65);
+                        this.labelYposX = ((int)Screen.PrimaryScreen.Bounds.Width - 70);
                         this.labelYposY = (20);
                         this.localizaciones = Localizaciones.derArriba;
 
                         break;
                     case Localizaciones.derArriba:
-                        this.labelXposX = ((int)SystemParameters.FullPrimaryScreenWidth - 130);
-                        this.labelXposY = ((int)SystemParameters.FullPrimaryScreenHeight - 20);
-                        this.labelYposX = ((int)SystemParameters.FullPrimaryScreenWidth - 65);
-                        this.labelYposY = ((int)SystemParameters.FullPrimaryScreenHeight - 20);
+                        this.labelXposX = ((int)Screen.PrimaryScreen.Bounds.Width - 135);
+                        this.labelXposY = ((int)Screen.PrimaryScreen.Bounds.Height - 40);
+                        this.labelYposX = ((int)Screen.PrimaryScreen.Bounds.Width - 70);
+                        this.labelYposY = ((int)Screen.PrimaryScreen.Bounds.Height - 40);
                         this.localizaciones = Localizaciones.derAbajo;
                         break;
                     case Localizaciones.derAbajo:
                         this.labelXposX = (20);
-                        this.labelXposY = ((int)SystemParameters.FullPrimaryScreenHeight - 20);
+                        this.labelXposY = ((int)Screen.PrimaryScreen.Bounds.Height - 40);
                         this.labelYposX = (85);
-                        this.labelYposY = ((int)SystemParameters.FullPrimaryScreenHeight - 20);
+                        this.labelYposY = ((int)Screen.PrimaryScreen.Bounds.Height - 40);
                         localizaciones = Localizaciones.izqAbajo;
                         break;
                     case Localizaciones.izqAbajo:
-                        this.labelXposX = ((int)SystemParameters.FullPrimaryScreenWidth / 2);
-                        this.labelXposY = ((int)SystemParameters.FullPrimaryScreenHeight / 2);
-                        this.labelYposX = (int)(SystemParameters.FullPrimaryScreenWidth / 2 + 65);
-                        this.labelYposY = (int)(SystemParameters.FullPrimaryScreenHeight / 2);
+                        this.labelXposX = ((int)Screen.PrimaryScreen.Bounds.Width / 2);
+                        this.labelXposY = ((int)Screen.PrimaryScreen.Bounds.Height / 2);
+                        this.labelYposX = (int)(Screen.PrimaryScreen.Bounds.Width / 2 + 70);
+                        this.labelYposY = (int)(Screen.PrimaryScreen.Bounds.Height / 2);
                         this.localizaciones = Localizaciones.centro;
                         break;
                     default:
@@ -202,6 +188,19 @@ namespace MouseXY
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
+        }
+
+        private void VentanaInicial_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+        }
+
+        private void VentanaInicial_KeyUp(object sender, KeyEventArgs e)
+        {
+
         }
     }
 }
